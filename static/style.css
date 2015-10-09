@@ -1,0 +1,74 @@
+body {
+    margin:15px;
+}
+
+.colorBar {
+    height:5px;
+    background-color:#4897E8;
+}
+
+#newNote {
+    margin-top:10px;
+}
+
+.dataEntry {
+    border-style:solid;
+    border-color:#4897E8;
+    background-color:rgba(255, 255, 0, 0.17);
+    border-radius:15px;
+    padding:5px;
+    margin:10px;
+    display:inline-block;
+    position:relative;
+    width:240px;
+    padding-bottom:15px;
+    padding-left:10px;
+}
+
+#editPad {
+    height:0px;
+    opacity:0;
+}
+
+.noteTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.noteContent {
+    margin-bottom: 10px;
+}
+
+
+.dataEntry h3 {
+    margin:2px;
+}
+
+h2 {
+   margin-top:10px
+}
+
+.stateDefined {
+   background-color:rgba(255, 255, 0, 0.17);
+   color:black;
+}
+
+.stateInProgress {
+   background-color:green;
+   color:white;
+}
+
+.stateDone {
+   background-color:blue;
+   color:white;
+}
+
+.stateBlocked {
+   background-color:red;
+   color:white;
+}
+
+.header {
+
+}

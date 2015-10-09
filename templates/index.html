@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title></title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="NotesController as ctrl" class="container">
+    <div class="header row">
+        <div class="col-xs-8">
+            <h1>Work Pad</h1>
+        </div>
+        <div class="col-xs-4">
+            Date: <[ ctrl.dateStr ]><br>
+            Tasks: <[ ctrl.allData.length ]>
+        </div>
+    </div>
+
+    <div class="colorBar"></div>
+
+    <div>
+        Application for taking daily notes.
+    </div>
+
+    <button id="newNote" class="btn-primary" ng-click="ctrl.showEdit(event)">New Note</button>
+
+    <div id="editPad">
+        <h2>Add Note</h2>
+        Title: <input type="text" size="60" ng-model="ctrl.titleContent"> </input>
+        <div>Content:</div>
+        <textarea rows="7" cols="90" placeholder="Enter Note Content" ng-model="ctrl.noteContent"></textarea>
+        <div>
+            <span>
+                <button class="btn-primary" ng-click="ctrl.addNote()">Add</button>
+                <button class="btn-primary" ng-click="ctrl.pressHereTapped(event)">Refresh</button>
+            </span>
+        </div>
+    </div>
+
+
+    <div id="noteList">
+        <h2>Notes</h2>
+
+        <div class="dataEntry" ng-repeat="rec in ctrl.allData">
+            <div class="noteTitle"><[rec.title]></div>
+            <div class="noteContent"><[rec.content]></div>
+            <button ng-click="ctrl.deleteTapped(rec._id['$oid'])">-</button>
+            <button ng-click="ctrl.updateState(rec._id['$oid'], 'inProgress')">e</button>
+            <[rec.state]>
+        </div>
+    </div>
+
+    <script src="/static/jquery.js"></script>
+    <script src="/static/bootstrap.js"></script>
+    <script src="/static/angular.js"></script>
+    <script src="/static/notesController.js"></script>
+</div>
+</body>
+</html>
