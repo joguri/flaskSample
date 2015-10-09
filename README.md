@@ -12,7 +12,15 @@ I wanted to generate a basic working web application skeleton that would do the 
   * The REST API would use a Mongo DB Back end storage via Python
   * Uses Bootstrap.js for styling and responsive design 
 
-The 
+## Interesting Discoveries
+
+The purpose of this was to learn, and be able to crank out a web app with a decent GUI, 
+one that would handle a backend data model.
+
+  * The Angular and Flask templates conflict, so you need to change the angular
+    template to change `{{ }}` to something else. In my case, I changed it to 
+    `<[ ]>`.
+
 
 ## Files
 
