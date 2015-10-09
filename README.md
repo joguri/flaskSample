@@ -7,10 +7,10 @@ A python flask project that uses Angular JS for the UI and client logic, and Pyt
 I wanted to generate a basic working web application skeleton that would do the following:
 
   * Serve up a single page web application
-  * Use Angular JS
+  * Use **Angular JS**
   * Provide a REST API for the UI's model
-  * The REST API would use a Mongo DB Back end storage via Python
-  * Uses Bootstrap.js for styling and responsive design 
+  * The REST API would use a **Mongo DB** Back end storage via Python
+  * Uses **Bootstrap.js** for styling and responsive design 
 
 ## Interesting Discoveries
 
@@ -21,6 +21,7 @@ one that would handle a backend data model.
     template to change `{{ }}` to something else. In my case, I changed it to 
     `<[ ]>`.
 
+  * Using Karma for testing automation. The jury is still out for me on that.
 
 ## Files
 
@@ -51,7 +52,7 @@ looks for the database "test1" and the collection "note".
 
 The note record looks like this:
 
-```
+```json
 {
 	"_id" : ObjectId("5612bc7817b87906e0712a60"),
 	"title" : "Sprint Plan Item",
