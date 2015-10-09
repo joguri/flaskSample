@@ -30,9 +30,9 @@ The
 ## REST API
 
    * GET	/note/			Gets the list of notes
-   * GET	/note/<note_id>		Gets a specific note
+   * GET	/note/`<note_id>`		Gets a specific note
    * POST /note			Creates a note
-   * PUT  /note/<note_id> 	Updates note in post data
-   * DELETE /note/<note_id>	Deletes a specific note
+   * PUT  /note/<`note_id>` 	Updates note in post data
+   * DELETE /note/<`note_id>`	Deletes a specific note
    * DELETE /note/drop		Drops the entire notes table
 
