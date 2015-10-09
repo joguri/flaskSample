@@ -36,3 +36,20 @@ The
    * DELETE /note/<`note_id>`	Deletes a specific note
    * DELETE /note/drop		Drops the entire notes table
 
+## Mongo
+
+This does require Mongo DB running on the host. It assumes the default port, and it
+looks for the database "test1" and the collection "note". 
+
+The note record looks like this:
+
+```
+{
+	"_id" : ObjectId("5612bc7817b87906e0712a60"),
+	"title" : "Sprint Plan Item",
+	"content" : "Builder Merge app/sdk",
+	"state" : "defined",
+	"details" : "",
+	"type" : "note"
+}
+```
